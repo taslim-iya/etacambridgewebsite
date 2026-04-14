@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Arial, 'Helvetica Neue', sans-serif;
+    background-color: #f7f2e4;
+    color: #1A1819;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .eta-label {
+    @apply text-[11px] font-bold uppercase tracking-[0.15em] text-eta-muted font-sans;
+  }
+
+  .eta-body {
+    @apply text-base text-eta-navy font-sans leading-relaxed;
+  }
+
+  .eta-muted-text {
+    @apply text-sm text-eta-muted font-sans;
+  }
+
+  .eta-btn-primary {
+    @apply bg-eta-navy text-white text-sm font-bold font-sans px-6 py-3 hover:bg-eta-navy-mid transition-colors duration-150 inline-flex items-center gap-2;
+  }
+
+  .eta-btn-secondary {
+    @apply border-2 border-eta-navy text-eta-navy text-sm font-bold font-sans px-6 py-3 hover:bg-eta-navy hover:text-white transition-colors duration-150 inline-flex items-center gap-2;
+  }
+
+  .eta-card {
+    @apply bg-white border border-eta-border p-6;
+  }
+
+  .eta-divider {
+    @apply border-t border-eta-border;
+  }
+}
